@@ -25,9 +25,6 @@ export default function Header() {
       <header className="fixed top-0 inset-x-0 z-40 flex items-center justify-between px-5 py-4 bg-paper/85 backdrop-blur-sm border-b border-rule/40">
         <Link to="/" className="font-display text-base font-bold tracking-wide text-ink">
           試演会
-          <span className="ml-2 font-mono text-[10px] font-normal text-ink-soft/70 tracking-widest2">
-            REC.
-          </span>
         </Link>
 
         {/* バーガーメニューボタン */}
