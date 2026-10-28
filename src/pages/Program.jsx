@@ -38,6 +38,7 @@ export default function Program() {
                 </span>
                 <span className="block text-sm text-ink-soft mt-0.5 truncate">
                   {piece.composer} 作曲
+                  {piece.arranger && ` / ${piece.arranger} 編曲`}
                 </span>
                 <span className="block text-xs text-ink-soft/70 truncate">
                   {piece.performer}

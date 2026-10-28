@@ -44,13 +44,23 @@ export default function PieceDetail() {
           <p className="mt-2 font-display text-lg text-ink-soft">
             {piece.composer}
           </p>
-          <p className="mt-1 text-sm text-ink-soft/80">{piece.performer}</p>
-
-          <div className="mt-6 h-px bg-rule/40" />
-
-          <p className="mt-6 text-[15px] leading-[1.9] text-ink-soft whitespace-pre-line">
-            {piece.description}
+          {piece.arranger && (
+            <p className="mt-1 text-sm text-ink-soft">編曲：{piece.arranger}</p>
+          )}
+          {/* break-keep: 読み仮名などが1〜2文字だけ次の行に落ちないよう、全角スペースや括弧の位置で折り返す */}
+          <p className="mt-1 text-sm leading-relaxed text-ink-soft/80 whitespace-pre-line break-keep [overflow-wrap:anywhere]">
+            {piece.performer}
           </p>
+
+          {piece.description && (
+            <>
+              <div className="mt-6 h-px bg-rule/40" />
+
+              <p className="mt-6 text-[15px] leading-[1.9] text-ink-soft whitespace-pre-line">
+                {piece.description}
+              </p>
+            </>
+          )}
         </div>
 
         {/* 右側：演奏順・写真 */}
@@ -63,14 +73,17 @@ export default function PieceDetail() {
               / {String(programData.length).padStart(2, "0")}
             </span>
           </div>
-          <div className="aspect-[4/3] w-full overflow-hidden rounded-sm border border-rule/40 bg-paper-dark">
-            <img
-              src={piece.image}
-              alt={`${piece.title} のイメージ`}
-              className="h-full w-full object-cover"
-              loading="lazy"
-            />
-          </div>
+          {/* 画像が未設定（空文字）の作品は画像枠ごと出さない */}
+          {piece.image && (
+            <div className="aspect-[4/3] w-full overflow-hidden rounded-sm border border-rule/40 bg-paper-dark">
+              <img
+                src={piece.image}
+                alt={`${piece.title} のイメージ`}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          )}
         </div>
       </div>
 

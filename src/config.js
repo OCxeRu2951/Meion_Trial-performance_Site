@@ -2,4 +2,4 @@
 // プログラム画面・作品詳細画面・メニュー内の作品一覧が
 // すべて「準備中」表示に切り替わります。
 // 曲目・演奏順が確定したら true に変更してください。
-export const PROGRAM_PUBLISHED = false;
+export const PROGRAM_PUBLISHED = true;
