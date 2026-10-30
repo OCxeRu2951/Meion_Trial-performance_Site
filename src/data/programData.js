@@ -18,67 +18,75 @@
 //    演奏順が確定したら order と配列の並びを修正してください。
 
 export const programData = [
-    {
-        id: "kotonasekai",
-        order: 1,
-        title: "コトナセカイ",
-        composer: "吉田唯翔（Yuito Yoshida）",
-        performer: "",
-        description:
-            "曲としては幻想的でありどこか感動するようなイメージで作品を作ってみました。この曲は本来、合成音声（ボーカロイドのようなもの）が歌唱するポップス曲なのですが、今回は人の声と合成された声を比較し、どのように異なるのかを聴き比べて欲しいと感じたため、このような形の作品とさせていただきました。聞きどころとしては、個人的には曲を通して鳴っているストリングス（ヴァイオリンなどの弦楽器隊）が綺麗だと思うのと、歌詞を深く考えて書いてみたので良ければ着目してみてください。",
-        image: "",
-    },
-    {
-        id: "allegro-energico",
-        order: 2,
-        title: "サクソフォン四重奏「Allegro Energico」",
-        composer: "山下喜己（Yoshiki Yamashita）",
-        performer:
-            "S.Sax.：管楽コース1年　高橋伶（たかはしれい）\n" +
-            "A.Sax.：管楽コース1年　内藤玲音（ないとうれね）\n" +
-            "T.Sax.：音楽教育コース1年　渡辺聖（わたなべさとし）\n" +
-            "B.Sax.：管楽コース1年　冨田涼介（とみたりょうすけ）",
-        description:
-            "サクソフォンの持つ力強さと美しさの対比の付けた作品です。迫力のある音圧と甘い旋律をお楽しみください。",
-        image: "",
-    },
-    {
-        id: "romanian-folk-dances",
-        order: 3,
-        title: "弦楽四重奏「ルーマニア民俗舞曲」",
-        composer: "B.バルトーク",
-        arranger: "山下喜己（Yoshiki Yamashita）",
-        performer:
-            "1st Vn：弦楽コース4年　石川立都（いしかわりつ）\n" +
-            "2nd Vn：弦楽コース2年　柴田蓮音（しばたれおん）\n" +
-            "Va：弦楽コース2年　福井清江（ふくいすみえ）\n" +
-            "Vc：弦楽コース4年　渡辺彩巴（わたなべいろは）",
-        description: "", // PDFでは「＊記入なし」
-        image: "",
-    },
-    {
-        id: "flora",
-        order: 4,
-        title: "Flora ~for Clarinet Ensemble~",
-        composer: "曽根悠佑（Yusuke Sone）",
-        performer:
-            "Clarinet 1：管楽コース2年　滝川慶吾（たきかわけいご）\n" +
-            "Clarinet 2：管楽コース2年　神谷音花（かみやおとは）\n" +
-            "Clarinet 3：管楽コース1年　榊原サラ（さかきばらさら）\n" +
-            "Alto Clarinet：管楽コース2年　八代悠真（やしろゆうま）\n" +
-            "Bass Clarinet：管楽コース2年　野中愛世（のなかあよ）",
-        description: "", // PDFでは「＊未回答」
-        image: "",
-    },
-    {
-        id: "prism",
-        order: 5,
-        title: "プリズム(Prism)",
-        composer: "廣瀬志門（Shimon Hirose）",
-        performer:
-            "ピアノ：同大学音楽研究科（修士課程）器楽専攻1年　小松さくら（こまつさくら）",
-        description:
-            "この曲は光を屈折させる「プリズム」をイメージして作ったピアノソロのための小品です。七音からなるテーマを軸にして、七色の光を表現しています。柔らかく、結晶のおように澄んだピアノの音色と、幻想的な和音の響きをお楽しみください。",
-        image: "",
-    },
+  {
+    id: "kotonasekai",
+    order: 1,
+    title: "コトナセカイ",
+    composer: "吉田唯翔（Yuito Yoshida）",
+    performer: "",
+    description:
+      "曲としては幻想的でありどこか感動するようなイメージで作品を作ってみました。この曲は本来、合成音声（ボーカロイドのようなもの）が歌唱するポップス曲なのですが、今回は人の声と合成された声を比較し、どのように異なるのかを聴き比べて欲しいと感じたため、このような形の作品とさせていただきました。聞きどころとしては、個人的には曲を通して鳴っているストリングス（ヴァイオリンなどの弦楽器隊）が綺麗だと思うのと、歌詞を深く考えて書いてみたので良ければ着目してみてください。",
+    image: "",
+  },
+  {
+    id: "allegro-energico",
+    order: 2,
+    title: "サクソフォン四重奏「Allegro Energico」",
+    composer: "山下喜己（Yoshiki Yamashita）",
+    performer:
+      "S.Sax.：管楽コース1年　高橋伶（たかはしれい）\n" +
+      "A.Sax.：管楽コース1年　内藤玲音（ないとうれね）\n" +
+      "T.Sax.：音楽教育コース1年　渡辺聖（わたなべさとし）\n" +
+      "B.Sax.：管楽コース1年　冨田涼介（とみたりょうすけ）",
+    description:
+      "サクソフォンの持つ力強さと美しさの対比の付けた作品です。迫力のある音圧と甘い旋律をお楽しみください。",
+    image: "",
+  },
+  {
+    id: "romanian-folk-dances",
+    order: 3,
+    title: "弦楽四重奏「ルーマニア民俗舞曲」",
+    composer: "B.バルトーク",
+    arranger: "山下喜己（Yoshiki Yamashita）",
+    performer:
+      "1st Vn：弦楽コース4年　石川立都（いしかわりつ）\n" +
+      "2nd Vn：弦楽コース2年　柴田蓮音（しばたれおん）\n" +
+      "Va：弦楽コース2年　福井清江（ふくいすみえ）\n" +
+      "Vc：弦楽コース4年　渡辺彩巴（わたなべいろは）",
+    description: "", // PDFでは「＊記入なし」
+    image: "",
+  },
+  {
+    id: "flora",
+    order: 4,
+    title: "Flora ~for Clarinet Ensemble~",
+    composer: "曽根悠佑（Yusuke Sone）",
+    performer:
+      "Clarinet 1：管楽コース2年　滝川慶吾（たきかわけいご）\n" +
+      "Clarinet 2：管楽コース2年　神谷音花（かみやおとは）\n" +
+      "Clarinet 3：管楽コース1年　榊原サラ（さかきばらさら）\n" +
+      "Alto Clarinet：管楽コース2年　八代悠真（やしろゆうま）\n" +
+      "Bass Clarinet：管楽コース2年　野中愛世（のなかあよ）",
+    description: "", // PDFでは「＊未回答」
+    image: "",
+  },
+  {
+    id: "prism",
+    order: 5,
+    title: "プリズム(Prism)",
+    composer: "廣瀬志門（Shimon Hirose）",
+    performer:
+      "ピアノ：同大学音楽研究科（修士課程）器楽専攻1年　小松さくら（こまつさくら）",
+    description:
+      "この曲は光を屈折させる「プリズム」をイメージして作ったピアノソロのための小品です。七音からなるテーマを軸にして、七色の光を表現しています。柔らかく、結晶のおように澄んだピアノの音色と、幻想的な和音の響きをお楽しみください。",
+    image: "",
+  },
+  {
+    id: "Pinna",
+    order: 6,
+    title: "Pinna",
+    composer: "酒井結斗（Yuito Sakai）",
+    description: "バイノーラル録音は、ヘッドフォンやイヤホンで聴かれることを前提に、二つの耳に届く音の差によって空間を再現する技術である。これをスピーカーで再生すると、音の位置の手がかりは崩れてしまうが、音がもつ「近さ」は失われない。本作は、ダミーヘッドマイクで収録した囁きと触れる音から、両耳の差の成分を取り出し、四台のスピーカーで囲まれた空間へと展開する。耳元という最も私的な距離で発せられた声は、やがて増殖し、変質し、空間を自在に駆け巡る。",
+    image: "",
+  },
 ];
