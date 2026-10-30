@@ -14,8 +14,8 @@
 //   image: "/path/to/image.jpg",
 // },
 //
-// ※ order（演奏順）は仮。出品者一覧（2026/10/22作成のPDF）は「順不同」のため、
-//    演奏順が確定したら order と配列の並びを修正してください。
+// ※ order（演奏順）と配列の並びは、プログラムのPDF（2026/10/30作成）の掲載順。
+//    第1部（デジタル音源作品の発表）が 1〜4、休憩をはさんで第2部（室内楽曲作品の発表）が 5〜10。
 
 export const programData = [
   {
@@ -28,6 +28,14 @@ export const programData = [
     image: "",
   },
   {
+    id: "nyukoku-kanrikyoku",
+    order: 2,
+    title: "入国管理局",
+    composer: "李鎔賑", // ローマ字表記は未確認
+    description: "", // アンケートの回答なし
+    image: "",
+  },
+  {
     id: "kotonasekai",
     order: 3,
     title: "コトナセカイ",
@@ -35,6 +43,23 @@ export const programData = [
     performer: "",
     description:
       "曲としては幻想的でありどこか感動するようなイメージで作品を作ってみました。この曲は本来、合成音声（ボーカロイドのようなもの）が歌唱するポップス曲なのですが、今回は人の声と合成された声を比較し、どのように異なるのかを聴き比べて欲しいと感じたため、このような形の作品とさせていただきました。聞きどころとしては、個人的には曲を通して鳴っているストリングス（ヴァイオリンなどの弦楽器隊）が綺麗だと思うのと、歌詞を深く考えて書いてみたので良ければ着目してみてください。",
+    image: "",
+  },
+  {
+    id: "shinkyoku",
+    order: 4,
+    title: "新曲", // PDFの表記のまま（仮題かは未確認）
+    composer: "鈴木悠斗", // ローマ字表記は未確認
+    description: "", // アンケートの回答なし
+    image: "",
+  },
+  {
+    id: "shinai-naru-anata-e",
+    order: 5,
+    title: "親愛なるあなたへ。",
+    composer: "源内仁都", // ローマ字表記は未確認
+    performer: "", // 演奏者は未確認
+    description: "", // アンケートの回答なし
     image: "",
   },
   {
@@ -77,8 +102,17 @@ export const programData = [
     image: "",
   },
   {
-    id: "allegro-energico",
+    id: "fall-leaves",
     order: 9,
+    title: "Fall Leaves~for3Trumpets and Piano~",
+    composer: "源内仁都", // ローマ字表記は未確認
+    performer: "", // 演奏者は未確認
+    description: "", // アンケートの回答なし
+    image: "",
+  },
+  {
+    id: "allegro-energico",
+    order: 10,
     title: "サクソフォン四重奏「Allegro Energico」",
     composer: "山下喜己（Yoshiki Yamashita）",
     performer:
