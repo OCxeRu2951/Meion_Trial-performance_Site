@@ -19,8 +19,17 @@
 
 export const programData = [
   {
-    id: "kotonasekai",
+    id: "Pinna",
     order: 1,
+    title: "Pinna",
+    composer: "酒井結斗（Yuito Sakai）",
+    description:
+      "バイノーラル録音は、ヘッドフォンやイヤホンで聴かれることを前提に、二つの耳に届く音の差によって空間を再現する技術である。これをスピーカーで再生すると、音の位置の手がかりは崩れてしまうが、音がもつ「近さ」は失われない。本作は、ダミーヘッドマイクで収録した囁きと触れる音から、両耳の差の成分を取り出し、四台のスピーカーで囲まれた空間へと展開する。耳元という最も私的な距離で発せられた声は、やがて増殖し、変質し、空間を自在に駆け巡る。",
+    image: "",
+  },
+  {
+    id: "kotonasekai",
+    order: 3,
     title: "コトナセカイ",
     composer: "吉田唯翔（Yuito Yoshida）",
     performer: "",
@@ -29,36 +38,19 @@ export const programData = [
     image: "",
   },
   {
-    id: "allegro-energico",
-    order: 2,
-    title: "サクソフォン四重奏「Allegro Energico」",
-    composer: "山下喜己（Yoshiki Yamashita）",
+    id: "prism",
+    order: 6,
+    title: "プリズム(Prism)",
+    composer: "廣瀬志門（Shimon Hirose）",
     performer:
-      "S.Sax.：管楽コース1年　高橋伶（たかはしれい）\n" +
-      "A.Sax.：管楽コース1年　内藤玲音（ないとうれね）\n" +
-      "T.Sax.：音楽教育コース1年　渡辺聖（わたなべさとし）\n" +
-      "B.Sax.：管楽コース1年　冨田涼介（とみたりょうすけ）",
+      "ピアノ：同大学音楽研究科（修士課程）器楽専攻1年　小松さくら（こまつさくら）",
     description:
-      "サクソフォンの持つ力強さと美しさの対比の付けた作品です。迫力のある音圧と甘い旋律をお楽しみください。",
-    image: "",
-  },
-  {
-    id: "romanian-folk-dances",
-    order: 3,
-    title: "弦楽四重奏「ルーマニア民俗舞曲」",
-    composer: "B.バルトーク",
-    arranger: "山下喜己（Yoshiki Yamashita）",
-    performer:
-      "1st Vn：弦楽コース4年　石川立都（いしかわりつ）\n" +
-      "2nd Vn：弦楽コース2年　柴田蓮音（しばたれおん）\n" +
-      "Va：弦楽コース2年　福井清江（ふくいすみえ）\n" +
-      "Vc：弦楽コース4年　渡辺彩巴（わたなべいろは）",
-    description: "", // PDFでは「＊記入なし」
+      "この曲は光を屈折させる「プリズム」をイメージして作ったピアノソロのための小品です。七音からなるテーマを軸にして、七色の光を表現しています。柔らかく、結晶のおように澄んだピアノの音色と、幻想的な和音の響きをお楽しみください。",
     image: "",
   },
   {
     id: "flora",
-    order: 4,
+    order: 7,
     title: "Flora ~for Clarinet Ensemble~",
     composer: "曽根悠佑（Yusuke Sone）",
     performer:
@@ -71,22 +63,31 @@ export const programData = [
     image: "",
   },
   {
-    id: "prism",
-    order: 5,
-    title: "プリズム(Prism)",
-    composer: "廣瀬志門（Shimon Hirose）",
+    id: "romanian-folk-dances",
+    order: 8,
+    title: "弦楽四重奏「ルーマニア民俗舞曲」",
+    composer: "B.バルトーク",
+    arranger: "山下喜己（Yoshiki Yamashita）",
     performer:
-      "ピアノ：同大学音楽研究科（修士課程）器楽専攻1年　小松さくら（こまつさくら）",
-    description:
-      "この曲は光を屈折させる「プリズム」をイメージして作ったピアノソロのための小品です。七音からなるテーマを軸にして、七色の光を表現しています。柔らかく、結晶のおように澄んだピアノの音色と、幻想的な和音の響きをお楽しみください。",
+      "1st Vn：弦楽コース4年　石川立都（いしかわりつ）\n" +
+      "2nd Vn：弦楽コース2年　柴田蓮音（しばたれおん）\n" +
+      "Va：弦楽コース2年　福井清江（ふくいすみえ）\n" +
+      "Vc：弦楽コース4年　渡辺彩巴（わたなべいろは）",
+    description: "", // PDFでは「＊記入なし」
     image: "",
   },
   {
-    id: "Pinna",
-    order: 6,
-    title: "Pinna",
-    composer: "酒井結斗（Yuito Sakai）",
-    description: "バイノーラル録音は、ヘッドフォンやイヤホンで聴かれることを前提に、二つの耳に届く音の差によって空間を再現する技術である。これをスピーカーで再生すると、音の位置の手がかりは崩れてしまうが、音がもつ「近さ」は失われない。本作は、ダミーヘッドマイクで収録した囁きと触れる音から、両耳の差の成分を取り出し、四台のスピーカーで囲まれた空間へと展開する。耳元という最も私的な距離で発せられた声は、やがて増殖し、変質し、空間を自在に駆け巡る。",
+    id: "allegro-energico",
+    order: 9,
+    title: "サクソフォン四重奏「Allegro Energico」",
+    composer: "山下喜己（Yoshiki Yamashita）",
+    performer:
+      "S.Sax.：管楽コース1年　高橋伶（たかはしれい）\n" +
+      "A.Sax.：管楽コース1年　内藤玲音（ないとうれね）\n" +
+      "T.Sax.：音楽教育コース1年　渡辺聖（わたなべさとし）\n" +
+      "B.Sax.：管楽コース1年　冨田涼介（とみたりょうすけ）",
+    description:
+      "サクソフォンの持つ力強さと美しさの対比の付けた作品です。迫力のある音圧と甘い旋律をお楽しみください。",
     image: "",
   },
 ];
